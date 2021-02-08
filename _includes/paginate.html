@@ -1,0 +1,41 @@
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <nav aria-label="page navigation example" class="st-pagination">
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+                <li>
+                    <a aria-label="previous" href="{{ paginator.previous_page_path | relative_url }}">
+                        <span aria-hidden="true">previous</span>
+                    </a>
+                </li>
+            {% else %}
+                <li><span aria-hidden="true">previous</span></li>
+            {% endif %}
+
+            {% for page in (1..paginator.total_posts) %}
+                {% if page == paginator.page %}
+                    <li class="active">
+                        <a href="{{ page }}">{{ page }}</a>
+                    </li>
+                {% elsif page == 1 %}
+                    <li>
+                        <a href="{{ page.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{{ page.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+                <li>
+                    <a aria-label="Next" href="{{ paginator.next_page_path | relative_url }}">
+                        <span aria-hidden="true">next</span>
+                    </a>
+                </li>
+            {% else %}
+                <li><span aria-hidden="true">next</span></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>

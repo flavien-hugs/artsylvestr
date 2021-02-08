@@ -1,0 +1,66 @@
+---
+layout: default
+collectionpage: posts
+title: Blog
+---
+
+<div class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="wrapper-content bg-white pinside40">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="row">
+                                {% for post in paginator.posts %}
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <article class="post-holder">
+                                            <div class="post-block mb40">
+                                                <div class="post-img mb30">
+                                                    <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link">
+                                                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ site.baseurl }}{{ post.image }}" class="img-fluid">
+                                                    </a>
+                                                </div>
+
+                                                <div class="bg-white">
+                                                    <h1>
+                                                        <a href="{{ post.url|prepend: site.baseurl }}" class="title">{{ post.title|link_to: post.url }}</a>
+                                                    </h1>
+
+                                                    <p class="meta">
+                                                        <span class="meta-date">
+                                                            {{ post.date|date_to_long_string }}
+                                                        </span>
+
+                                                        <span class="meta-category">
+                                                            {% if post.categories.size >= 1 %}
+                                                                {% for cat in post.categories  %}
+                                                                    <a class="meta-link" href="{{ site.baseurl }}/categories {{ cat }}" title="{{ cat }}">
+                                                                        {{ cat }}
+                                                                    </a>
+                                                                    {% unless forloop.last %}
+                                                                    &amp;{% endunless %}
+                                                                {% endfor %}
+                                                            {% endif %}
+                                                        </span>
+                                                    </p>
+
+                                                    <p>{{ post.description }}</p>
+
+                                                    <a href="{{ post.url|prepend: site.baseurl }}" class="btn-link">Read More</a>
+                                                </div>
+                                            </div>
+                                        </article><!-- /.post-holder -->
+                                    </div>
+                                {% endfor %}
+                                {% include paginate.html %}
+                            </div>
+                        </div>
+
+                        {% include sidebar.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "kareeba blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "jquery-sticky": "^1.0.4",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavien-hugs/kareebablog.git"
+  },
+  "author": "flavien-hugs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavien-hugs/kareebablog/issues"
+  },
+  "homepage": "https://github.com/flavien-hugs/kareebablog#readme"
+}

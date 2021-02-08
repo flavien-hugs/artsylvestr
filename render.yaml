@@ -1,0 +1,18 @@
+# A static site
+- type: web
+  name: kareeba
+  env: static
+  buildCommand: bundle exec jekyll build
+  staticPublishPath: ./build
+  pullRequestPreviewsEnabled: true
+  headers:
+  - path: /*
+    name: X-Frame-Options
+    value: sameorigin
+  routes:
+  - type: redirect
+    source: /_site
+    destination: ∕_site
+  - type: rewrite
+    source: /a/*
+    destination: /a

@@ -1,0 +1,14 @@
+#----------------
+# NAVIGATION
+#----------------
+
+menu:
+
+- title: Home
+  url: /
+
+- title: Writing
+  url: /blog
+
+- title: Video
+  url: /video

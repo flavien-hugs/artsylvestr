@@ -1,0 +1,10 @@
+#----------------
+# HEADER CAROUSEL
+#----------------
+
+slider:
+
+- title: Welcome to kareeba Blog.
+  image: '/assets/img/sliders/slider-2.jpg'
+  content: "Learn how to grow your business with tips
+  from makers like you around the world."

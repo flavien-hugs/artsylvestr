@@ -1,0 +1,155 @@
+---
+layout: base
+title: Artsylvestr
+parmalink: /
+---
+
+
+<section class="intro">
+  <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-left">
+            <div class="p-5 ">
+            <h1 id="art" class="display-1 p-4 bg-light">ARTSYLVESTR</h1>
+          </div>
+          </div>
+        
+            
+        </div>
+      </div>
+  </section>
+
+
+
+<!--About section-->
+
+<section class="p-5">
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-1">
+            <img class="img-fluid" src="/assets/img/art-min.png">
+      </div>
+      <!-- end img-->
+    <div class="col-md-6 text-left">
+      <div class="p-5">
+      <h1 class="display-4">Welcome</h1>
+      <p class="text-muted">
+        Voyez ce jeu exquis wallon, de graphie en kit mais bref. 
+        Portez ce vieux whisky au juge blond qui fume sur son île intérieure.
+        <a class="link" href="#">Discover my Parcour &rarr;</a>
+        </p>
+    </div>
+    </div>
+    
+      <!-- end message-->
+
+
+  </div>
+  </div>
+</section>
+
+<section class="gallery">
+    <!-- Page Content -->
+<div class="container">
+
+    <h1 class="fw-bold text-right text-lg-right mt-4 mb-0 text-decoration-underline"> GALLERY</h1>
+  
+    <hr class="mt-2 mb-5">
+  
+    <div class="row text-center text-lg-left">
+  
+      <div class="col-lg-3 col-md-4 col-6">
+        <a class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail shadow border-0" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+            </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+            </a>
+      </div>
+     
+    </div>
+  
+  </div>
+  <!-- /.container -->
+</section>
+
+
+
+<div class="section-blog py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-12">
+                <div class="text-center section-title mb-4">
+                    <!-- section title start-->
+                    <h1>Latest News</h1>
+
+                </div>
+                <!-- /.section title start-->
+            </div>
+        </div>
+
+        <div class="row">
+            {% for post in site.posts limit: 4 %}
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="service-img-box mb30 outline">
+                        <div class="service-img">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link">
+                                <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="service-content bg-white pinside30">
+                            <h4>
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="title">
+                                    {{ post.title | link_to: post.url }}
+                                </a>
+                            </h4>
+
+                            <p class="meta">
+                                <span class="meta-date">{{ post.date | date_to_string }}</span>
+                                <span class="meta-author">
+                                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn-link">Read More</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Seller of the month section -->
+
+<!-- Newsletter section -->
