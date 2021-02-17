@@ -28,10 +28,7 @@ custom settings
     max-height: 90vh;
     
 }
-.intro .dv .dv .dv .dv .h1 {
-    background-color: red;
-    padding: 20 10 20;
-}
+
 .intro #art {
   padding-top: 20%;
 }
@@ -178,12 +175,11 @@ Background & Block color
 .bg-default { background-color: #15549a; color: #87c0ff; }
 .bg-white { background-color: #fff; }
 .outline { border: 1px solid #dee4ee; }
-.link-title { }
+
 .small-title { font-size: 14px; color: #778191; font-weight: 500; }
 .big-title { font-size: 36px; font-weight: 600; color: #15549a; }
 .capital-title { text-transform: uppercase; font-size: 16px; font-weight: 600; }
-.bdr-btm { }
-.green-text { }
+
 .bg-boxshadow { -webkit-box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); -moz-box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); }
 .bg-gradient { position: relative; background: -moz-linear-gradient(-45deg, rgba(31, 43, 112, 1) 0%, rgba(31, 43, 112, 1) 47%, rgba(148, 58, 158, 1) 100%);    /* FF3.6-15 */ background: -webkit-linear-gradient(-45deg, rgba(31, 43, 112, 0.9) 0%, rgba(31, 43, 112, 0.9) 47%, rgba(148, 58, 158, 0.9) 100%);    /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(135deg, rgba(31, 43, 112, 0.9) 0%, rgba(31, 43, 112, 0.9) 47%, rgba(148, 58, 158, 0.9) 100%);    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e61f2b70', endColorstr='#e6943a9e', GradientType=1);    /* IE6-9 fallback on horizontal gradient */ }
 .well-box { background-color: #fff; padding: 30px; border-radius: 4px; }
@@ -194,10 +190,10 @@ Background & Block color
 .bg-light-blue { background-color: #15549a; }
 .text-pink { color: #0E6BA8; }
 
-.card{border-color: #d3dbea; background-color: #FF003B; border-radius: 3px; margin-bottom: 30px;}
+.card{border-color: #d3dbea; background-color: #ffffff; border-radius: 3px; margin-bottom: 30px;}
 .card-body{padding: 30px;}
 .card-header{background-color: #f7fafd;}
-
+.card {box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 
 
 
@@ -276,7 +272,6 @@ icon
 /* default icon size of font*/
 .icon-2x { font-size: 48px; }
 .icon-4x { font-size: 68px; }
-`
 .icon-6x { font-size: 88px; }
 .icon-8x { font-size: 108px; }
 .icon-default { color: #0E6BA8; }
@@ -301,7 +296,7 @@ top bar
 .searchbar { }
 .search-area { padding: 30px; }
 .header { background-color: var(--white); position: relative; z-index: 99; -webkit-box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); -moz-box-shadow: 0px 5px 9px 1px rgba(144, 161, 180, 0.2); }
-.logo { }
+.logo { padding-top: 10px;}
 .navigation-wide { background-color: #15549a }
 .navigation-wide #navigation { margin-top: 0px; float: left; background-color: #15549a; }
 #navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -423,21 +418,19 @@ display: block; background: #dddddd; content: '';}*/
 .how-it-section .how-it-no { float: left; color: #fff; font-size: 30px; height: 67px; width: 67px; background-color: #276ebc; border-radius: 100%; display: block; line-height: 1; padding: 20px 26px; }
 .how-it-section .how-it-content { padding-left: 100px; }
 .benifits-feature { margin-bottom: 30px; }
-.benifits-feature ul { }
 .benifits-feature ul li { padding-left: 20px; margin-bottom: 35px; }
 .benifits-feature .bullet-check-circle-default li:before { font-size: 20px; }
-.loan-rate-table { }
 .loan-rate-table .table-light { background-color: #eff5ff; margin-bottom: 30px; }
 .loan-rate-table .table thead { background-color: #e6f0ff; }
 .loan-rate-table .table>thead>tr>th { text-align: center; color: #15549a; font-size: 18px; border-top: transparent; border-bottom: transparent; padding: 20px 43px 20px; }
 .loan-rate-table .table tbody tr td { text-align: center; font-size: 16px; color: #414855; font-weight: 600; border-top: transparent; padding: 20px 0px; }
-.loan-half-img { }
+
 .loan-half-section { padding: 100px; }
 
 /*---------------------------------------------------
 compare card table
 -----------------------------------------------------*/
-.compare-table { }
+
 .compare-card-title { font-size: 18px; font-weight: 600; }
 .compare-table .table>thead>tr>th { padding: 12px 0px 10px 29px; text-align: left; font-weight: 500; }
 .compare-table .table>tbody>tr>td { border-top: transparent; padding: 30px; vertical-align: middle; }

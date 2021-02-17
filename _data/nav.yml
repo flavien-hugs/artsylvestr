@@ -12,3 +12,6 @@ menu:
 
 - title: Video
   url: /video
+
+- title: About
+  url: /about
