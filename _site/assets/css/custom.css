@@ -29,9 +29,6 @@ custom settings
     
 }
 
-.intro #art {
-  padding-top: 20%;
-}
 h1, h2, h3, h4, h5, h6 { margin: 0px 0px 10px 0px; font-weight: 500; }
 h1 { font-size: 32px; line-height: 44px; letter-spacing: -1px; }
 h2 { font-size: 24px; line-height: 32px; }
@@ -440,40 +437,28 @@ compare card table
 .expandable-info ul li { font-size: 14px; line-height: 24px; }
 .expandable-info .card { min-height: 285px; }
 .expandable-info .card-body { padding: 20px 20px 5px; }
-.card-tag { }
-.card-name { }
-.anuual-fees { }
-.reward-rate { }
 .compare-table .btn-link { font-size: 13px; padding-bottom: 0px; }
 
 /*---------------------------------------------------
 compare personal loan table
 -----------------------------------------------------*/
-.compare-personal-loan-table { }
+
 .compare-personal-loan-title { font-size: 22px; font-weight: 600; margin-bottom: 0px; color: #414855; }
 .compare-personal-loan-table .table>thead>tr>th { background-color: #f3f7fc; padding: 20px 0px 20px 29px; text-align: left; font-weight: 500; }
 .compare-personal-loan-table .table>tbody>tr>td { border-top: transparent; padding: 30px; vertical-align: middle; }
 .compare-personal-loan-table .table { margin-bottom: 0px; }
 .compare-personal-loan-table .list-group-item { position: relative; display: block; padding: 16px; margin-bottom: -1px; background-color: #fff; border: 1px solid rgba(222, 227, 235, 1); font-size: 15px; color: #414855; font-weight: 600; }
-.lender-tag { }
-.estimate-tex { }
-.credit-score { }
-.terms { }
-.monthly-payment { }
 
 /*---------------------------------------------------
 compare Student loan table
 -----------------------------------------------------*/
-.compare-student-loan-table { }
+
 .compare-student-loan-title { font-size: 22px; font-weight: 600; margin-bottom: 0px; color: #414855; }
 .compare-student-loan-table .table>thead>tr>th { background-color: #f3f7fc; padding: 20px 0px 20px 29px; text-align: left; font-weight: 500; }
 .compare-student-loan-table .table>tbody>tr>td { border-top: transparent; padding: 30px; vertical-align: middle; }
 .compare-student-loan-table .table { margin-bottom: 0px; }
 .compare-student-loan-table .list-group-item { position: relative; display: block; padding: 16px; margin-bottom: -1px; background-color: #fff; border: 1px solid rgba(222, 227, 235, 1); font-size: 15px; color: #414855; font-weight: 600; }
-.lender-tag { }
-.fixed-text { }
-.variable-apr { }
-.terms { }
+
 
 /*---------------------------------------------------
     Card Landing Page
