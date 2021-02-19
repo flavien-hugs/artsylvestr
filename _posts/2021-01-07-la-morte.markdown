@@ -6,7 +6,7 @@ categories: [News]
 keywords: [afro, tips, women, blackwomen, afro-care, skin-care]
 tags: ["kareeba", "Women", "marketplace", "Community", "Beauty", "skin-care", "makers"]
 description: "Welcome to Kareeba, the Community Of African Fashion & Accessories Makers"
-image: /assets/img/artsylestr-multiface.png
+image: /assets/img/artsylvestr-gallery-bottom-4.jpg
 author: Artsylvestr
 ---
 # Benvenuti

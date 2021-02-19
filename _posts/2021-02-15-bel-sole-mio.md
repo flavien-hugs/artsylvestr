@@ -5,7 +5,7 @@ date: 2021-02-09
 categories: [fashion]
 tag: ["Poesie", "artsylvestr", "Afro Italian", "African Brand", "Moda Afro"]
 description: "Una riflessione"
-image: /assets/img/art-3.png
+image: /assets/img/artsylvestr-sole.jpg
 ---
 
 # BEL SOLE MIO

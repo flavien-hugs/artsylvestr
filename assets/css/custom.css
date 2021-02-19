@@ -21,14 +21,17 @@ custom settings
 
 .intro {
     background-image: url("https://dzainstatic.s3.eu-central-1.amazonaws.com/hero-artsylvestr.jpg");
-    background-color: rgba(20, 6, 20, 0.933);
+    background-color: rgba(255, 255, 255, 0.933);
     background-size: auto;
     background-repeat: no-repeat;
     min-height: 90vh;
     max-height: 90vh;
     
 }
-
+.slice {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 h1, h2, h3, h4, h5, h6 { margin: 0px 0px 10px 0px; font-weight: 500; }
 h1 { font-size: 32px; line-height: 44px; letter-spacing: -1px; }
 h2 { font-size: 24px; line-height: 32px; }
