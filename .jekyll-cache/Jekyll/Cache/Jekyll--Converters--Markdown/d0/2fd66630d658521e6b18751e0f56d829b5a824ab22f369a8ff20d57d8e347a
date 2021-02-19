@@ -1,9 +1,4 @@
----
-layout: base
-title: About
-permalink: /about/
----
-<div class="container">
+I"<div class="container">
 <div class="row">
   <div class="col-md-12 text-center">
     <h3 class="display-4 mt-3 "> Dr. Joseph </h3>
@@ -25,9 +20,13 @@ permalink: /about/
       </div>
       </div>
       <div class="col-md-6">
-              <img class="img-fluid" src="/assets/img/profile-min.png" >
+              <img class="img-fluid" src="/assets/img/profile-min.png" />
             </div>
       </div>
     </div>
   </section>
-
+<section class="more-detail">
+&lt;div class=""c&gt;
+</section>
+</div></div>
+:ET

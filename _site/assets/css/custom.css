@@ -28,6 +28,10 @@ custom settings
     max-height: 90vh;
     
 }
+.about {
+  background-image: url("https://dzainstatic.s3.eu-central-1.amazonaws.com/about-cover.jpg");
+  background-repeat: no-repeat; background-size: auto;
+}
 .slice {
   padding-top: 60px;
   padding-bottom: 40px;
