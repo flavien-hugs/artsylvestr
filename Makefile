@@ -25,5 +25,5 @@ serve: include-npm-deps
 
 # generate-githubpages
 build-site:
-	rm -fr build && JEKYLL_ENV=production $(JEKYLL) build --baseurl https://artsylvestr.onrender.com -d build/ && touch build/.nojekyll
+	rm -fr build && JEKYLL_ENV=production $(JEKYLL) build --baseurl https://artsylv.onrender.com -d build/ && touch build/.nojekyll
 	

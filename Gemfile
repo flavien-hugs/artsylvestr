@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 git_source(:github) {
-    |repo_name| "https://github.com/flavien-hugs/{kareebablog}" }
-
+    |repo_name| "https://github.com/flavien-hugs/{artsylvestr}"
+}
 # gem de base pour Jekyll
 gem "jekyll"
 
@@ -15,5 +15,4 @@ group :jekyll_plugins do
     gem 'jekyll-minifier'
     gem 'jekyll-sitemap'
     gem 'jekyll-seo-tag'
-
 end

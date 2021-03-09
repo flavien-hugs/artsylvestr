@@ -19,8 +19,7 @@
                         {% if site.data.nav.menu[0] %}
                             {% for item in site.data.nav.menu %}
                                 <li class="{% if item.url == page.url %}active{% endif %}">
-                                    <a href="{{ item.url | prepend: site.baseurl }}" {% if item.title == "Shop" %}
-                                    target="_blank" {% endif %} class="animsition-link">
+                                    <a href="{{ item.url | prepend: site.baseurl }}" class="animsition-link">
                                     {{ item.title }}</a>
                                 </li>
                             {% endfor %}
