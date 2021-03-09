@@ -1,5 +1,6 @@
 #----------------------------------------
 # Configuration du site
+# https://artsylvestr.onrender.com
 # http://jekyllrb.com/docs/configuration/
 #----------------------------------------
 
@@ -9,19 +10,16 @@ email: hello@offdesign.co
 location: Worldwide
 title: Artsylvestr official website 
 language: "en"
-baseurl: "https://artsylvestr.onrender.com"
+baseurl: ""
 url: ""
 description: "Artsylvestr official website where the Camerun born and Italy based painter share his journey."
 keywords: [Artsylvestr, Painting, Quadri, Afro Italian, afro tips, accesories,  made in africa]
 
 timezone: London
 
-
-
 twitter: https://twitter.com/JosephDesire11
-
 facebook: https://www.facebook.com/desire.joseph.1
-
+article_facebook_author: https://www.facebook.com/offdesignco
 
 #-----------------------
 # configuration du build
@@ -43,7 +41,7 @@ plugins:
 
 
 #----------
-#gem
+# gem
 #----------
 
 jekyll-minifier:

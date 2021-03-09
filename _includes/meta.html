@@ -1,4 +1,5 @@
 <head>
+    <base href="{{ site.baseurl }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
@@ -16,7 +17,7 @@
     <meta name="title" content="Artsylvestr official website where the Camerun born and Italy based painter share his journey.">
 
     <!-- Twitter Tags -->
-    <meta name="twitter:card" content="{{'/assets/img/blog-site-preview.jpg'}}">
+    <meta name="twitter:card" content="{{ '/assets/img/blog-site-preview.jpg' | prepend: site.baseurl }}">
     <meta name="twitter:title" content="Artsylvestr official website where the Camerun born and Italy based painter share his journey.">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:site" content="@ulrichgero">
@@ -28,10 +29,10 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Artsylvestr official website where the Camerun born and Italy based painter share his journey.">
     <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
-    <meta property="og:image" content="{{'/assets/img/blog-site-preview.jpg'}}">
+    <meta property="og:image" content="{{'/assets/img/blog-site-preview.jpg' | prepend: site.baseurl}}">
     <meta property="og:site_name" content="Artsylvestr">
-    <meta property="article:publisher" content="http://www.facebook.com/offdesignco">
-    <meta property="article:author" content="https://www.facebook.com/offdesignco">
+    <meta property="article:publisher" content="{{ site.article_facebook_author }}">
+    <meta property="article:author" content="{{ site.article_facebook_author }}">
     <meta property="article:published_time" content="{{ page.date }}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
@@ -39,19 +40,19 @@
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&amp;display=swap" rel="stylesheet"> 
     <!-- FontAwesome CSS-->
     <link rel="stylesheet" href="{{ '/assets/vendor/css/font-awesome.min.css' | prepend: site.baseurl }}">
     <link href="{{ '/assets/vendor/css/fontello.css' | prepend: site.baseurl }}" rel="stylesheet">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="{{ '/assets/img/iconmin.png' }}">
+    <link rel="shortcut icon" href="{{ '/assets/img/iconmin.png' | prepend: site.baseurl }}">
 
     <!-- owl Carousel Css -->
     <link rel="stylesheet" href="{{'/assets/vendor/css/owl.carousel.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{'/assets/vendor/css/owl.theme.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{'/assets/bootstrap.min.css' | prepend: site.baseurl}}">
-    <link rel="stylesheet" href="{{'/assets/css/custom.css' | prepend: site.baseurl}}">
-    
+    <link rel="stylesheet" href="{{'/assets/bootstrap.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{'/assets/css/custom.css' | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.md','' | prepend: site.baseurl | prepend: site.url }}">
     {% seo %}
     <title>
         {% if page.title %}
